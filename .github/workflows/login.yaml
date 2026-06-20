@@ -13,12 +13,11 @@ jobs:
 
     steps:
       - name: Checkout 仓库代码
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
 
       - name: 设置 Python 环境
-        uses: actions/setup-python@v4
+        uses: actions/setup-python@v6
         with:
-          node-version: '24.x'
           python-version: '3.x'  # 设置你希望使用的 Python 版本，建议使用稳定版本
 
       - name: Create accounts.json from environment variable
